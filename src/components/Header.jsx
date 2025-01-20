@@ -9,11 +9,10 @@ export default function Header() {
           <MenuIcon sx={{ color: '#000000'}} />
         </IconButton>
         <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-          Cool Beans
+          Smash Burgers
         </Typography>
         <Button color="inherit">Home</Button>
         <Button color="inherit">Contact</Button>
-        <Button color="inherit">Our Beans</Button>
         <Button color="inherit">Login</Button>
       </Toolbar>
     </AppBar>

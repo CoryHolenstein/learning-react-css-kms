@@ -1,14 +1,18 @@
-import { Container, Grid } from "@mui/material";
+import { Container, Box } from "@mui/material";
+import MainTab from "../components/MainTab";
 
 const Home = () => {
   return (
-    <Container  sx={{ bgcolor: "#b3b3b3", height:"75vh", width: "75vw", display: "flex", flexDirection: "column" }}>
-        <Grid container spacing={2} sx={{ paddingTop: "64px", paddingBottom: "50px", flexGrow: 1 }}>
-        <Grid item xs={12}>
-            <h1>Home</h1>
-        </Grid>
-        </Grid>
-    </Container>
+    <div>
+      <Container maxWidth={false} sx={{ bgcolor: "#b3b3b3", height: "90vh", width: "90vw", display: "flex", flexDirection: "column" }}>
+        <Box sx={{ justifyContent: "flex-start", height: "100%", overflow: "hidden" }}>
+          <h1>Home</h1>
+          <Box sx={{ height: "calc(100% - 64px)", overflowY: "auto" }}>  {/* Adjust height and enable scrolling */}
+            <MainTab />
+          </Box>
+        </Box>
+      </Container>
+    </div>
   );
 }
 
