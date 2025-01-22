@@ -1,0 +1,25 @@
+{
+    "menuItems": [
+        {
+            "id": 1,
+            "name": "Smash Burger",
+            "price": "7.99",
+            "description": "A double patty, seasoned chuck burger with smash sauce, grilled onions and cheddar cheese.",
+            "fullDescription": "Patty size - 4 oz. each. Smash sauce - mustard, mayo, honey. Yellow onions. Cheddar cheese."
+        },
+        {
+            "id": 2,
+            "name": "Beef Burger",
+            "price": "7.99",
+            "description": "A single beef, season beef burger with lettuce, tomato, and pickles.",
+            "fullDescription": "Patty size - 8 oz. each. Lettuce, tomato, pickles. Seasoned with salt, pepper, garlic powder."
+        },
+        {
+            "id": 3,
+            "name": "Fries",
+            "price": "1.99",
+            "description": "Hand-cut fries seasoned with salt, pepper and garlic powder.",
+            "fullDescription": "Russet potatoes seasoned with salt, pepper and garlic powder. Fried in vegetable oil in an air fryer."
+        }
+    ]
+}

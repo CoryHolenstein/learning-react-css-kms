@@ -7,9 +7,7 @@ function App() {
   return (
     <> 
       <Header />
-      <Container maxWidth={false} disableGutters={true} sx={{ bgcolor: "white", minHeight: "100vh", paddingTop: "64px", paddingBottom: "50px", display: "flex", flexDirection: "column" }}>
        <Home />
-      </Container>
       <Footer />
     </>
   );

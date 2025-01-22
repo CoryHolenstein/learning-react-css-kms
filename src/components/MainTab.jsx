@@ -12,31 +12,37 @@ const MainTab = () => {
   const [selectedIndex, setSelectedIndex] = useState(0);
 
   return (
-    <div>
+    <>
       <Tabs selectedIndex={selectedIndex} direction='ltr' onSelect={index => setSelectedIndex(index)}>
-        <Box component="section" sx={{ width: 300, borderRadius: 1, border: '5px solid #000', display: 'flex', marginTop: '2%' }}>
+        <Box component="section" sx={{ width: 300, borderRadius: 1, border: '5px solid #000', display: 'flex', marginTop: '5%' }}>
           <TabList>
             {tabs.map((tab, index) => (
               <Tab key={index}>
-                <Typography
-                  variant="h4"
-                  component="div"
+                <Box
                   sx={{
-                    flexGrow: 1,
-                    textAlign: 'center',
-                    padding: 1,
-                    textDecorationLine: selectedIndex === index ? 'underline' : 'none'
+                    padding: 2,
+                    border: selectedIndex === index ? '3px solid #000' : 'none'
                   }}
                 >
-                  {tab.name}
-                </Typography>
+                  <Typography
+                    variant="h4"
+                    component="div"
+                    sx={{
+                      flexGrow: 1,
+                      textAlign: 'center',
+                      padding: 1,
+                      textDecorationLine: 'none'
+                    }}
+                  >
+                    {tab.name}
+                  </Typography>
+                </Box>
               </Tab>
             ))}
           </TabList>
         </Box>
 
         <Box sx={{
-          marginTop: '1%',
           marginLeft: '15%',
           display: 'flex',
           width: '55vw',
@@ -54,7 +60,7 @@ const MainTab = () => {
           ))}
         </Box>
       </Tabs>
-    </div>
+    </>
   );
 }
 
